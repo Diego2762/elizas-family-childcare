@@ -97,7 +97,7 @@ ul{list-style:none;}
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:13px;height:120px;}
 .nav-logo{flex:0 0 auto;}
-.nav-logo img{height:84px;width:auto;max-width:none;flex-shrink:0;}
+.nav-logo img{height:61px;width:auto;max-width:none;flex-shrink:0;}
 .nav-links{display:flex;align-items:center;gap:12px;}
 .nav-links a{font-weight:500;font-size:14.5px;color:var(--midnight);transition:color .2s;position:relative;}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--mango);transition:width .25s var(--ease);}
@@ -308,7 +308,7 @@ section{position:relative;}
    ============================================================ */
 .site-footer{background:var(--midnight);color:#c9c7dd;padding:64px 0 26px;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;}
-.site-footer img.flogo{height:88px;margin-bottom:16px;filter:brightness(0) invert(1);}
+.site-footer img.flogo{height:64px;margin-bottom:16px;}
 .site-footer h4{color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
 .site-footer a{color:#c9c7dd;font-size:14.5px;display:block;padding:5px 0;transition:color .2s;}
 .site-footer a:hover{color:var(--orchid);}
@@ -369,7 +369,7 @@ section{position:relative;}
   var(--sand);
   border-bottom:1px solid var(--line);overflow:hidden;}
 .page-hero::after{content:"";position:absolute;right:-40px;bottom:-60px;width:220px;height:220px;
-  background:url("../img/isotipo.svg") no-repeat center/contain;opacity:.06;transform:rotate(-8deg);pointer-events:none;}
+  background:url("../img/isotipo.png") no-repeat center/contain;opacity:.06;transform:rotate(-8deg);pointer-events:none;}
 .page-hero .wrap{position:relative;z-index:1;}
 .page-hero h1{font-size:clamp(34px,4.6vw,54px);margin:14px 0 12px;max-width:20ch;}
 .page-hero h1 .accent{color:var(--orchid);font-style:italic;}
@@ -378,11 +378,11 @@ section{position:relative;}
 .page-hero--logo .hero-split{display:grid;grid-template-columns:1fr 1.05fr;gap:32px;align-items:center;}
 .page-hero--logo::after{display:none;}
 .hero-logo{display:flex;justify-content:flex-end;align-items:center;}
-.hero-logo img{width:100%;max-width:660px;height:auto;margin-right:-48px;filter:drop-shadow(0 18px 34px rgba(44,44,84,.10));}
+.hero-logo img{width:100%;max-width:560px;height:auto;filter:drop-shadow(0 18px 34px rgba(44,44,84,.10));}
 @media(max-width:760px){
   .page-hero--logo .hero-split{grid-template-columns:1fr;gap:14px;}
   .hero-logo{justify-content:flex-start;}
-  .hero-logo img{max-width:260px;margin-right:0;}
+  .hero-logo img{max-width:230px;}
 }
 
 /* Breadcrumb */
@@ -846,13 +846,13 @@ body.cert-lock{overflow:hidden;}
 /* Header: shrink the top bar so it can never overflow a phone screen */
 @media (max-width:900px){
   .nav{height:84px;gap:10px;}
-  .nav-logo img{height:58px;}
+  .nav-logo img{height:42px;}
   .nav-links.open{top:84px;}
   .nav-cta .btn{padding:11px 17px;font-size:13.5px;}
 }
 @media (max-width:600px){
   .nav{height:70px;}
-  .nav-logo img{height:46px;}
+  .nav-logo img{height:34px;}
   .nav-links.open{top:70px;padding:18px 24px 24px;}
   /* Swap the wide tour button for a one tap call button */
   .nav-cta .btn{display:none;}
@@ -885,6 +885,7 @@ body.cert-lock{overflow:hidden;}
   .view-switch button{flex:1;justify-content:center;}
   .cert-close{width:44px;height:44px;top:4px;right:4px;}
   .cert-close svg{width:19px;height:19px;}
+  .fsocial a{width:44px;height:44px;}
 }
 
 /* iOS zooms the page in when a focused field is under 16px. Keep 16px on phones. */
