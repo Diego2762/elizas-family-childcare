@@ -134,9 +134,8 @@ ul{list-style:none;}
 .hero-sub{font-size:19px;color:var(--slate);max-width:44ch;margin-bottom:12px;}
 .hero-sub .es{display:block;color:var(--mango);font-weight:500;margin-top:4px;font-size:16.5px;}
 .hero-cta{display:flex;gap:14px;margin:26px 0 22px;flex-wrap:wrap;}
-.hero-badges{display:flex;flex-wrap:wrap;gap:8px 10px;}
-.chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:8px 15px;font-size:13.5px;font-weight:500;color:var(--midnight);box-shadow:var(--shadow-sm);}
-.chip .dot{width:9px;height:9px;border-radius:50%;}
+/* En la portada los botones cierran la columna, sin margen muerto debajo */
+.hero-copy .hero-cta:last-child{margin-bottom:0;}
 .hero-media{position:relative;}
 .hero-media .photo{border-radius:var(--radius-lg);box-shadow:var(--shadow);width:100%;object-fit:cover;aspect-ratio:4/3.4;background:var(--sand);}
 .hero-float{position:absolute;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:14px 18px;display:flex;align-items:center;gap:12px;}
