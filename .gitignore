@@ -4,3 +4,4 @@ Thumbs.db
 node_modules/
 *.log
 assets/fonts/Recoleta-RegularDEMO.otf
+.vercel
