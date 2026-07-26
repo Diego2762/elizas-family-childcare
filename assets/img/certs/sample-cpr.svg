@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 850" role="img" aria-label="Sample certificate">
+<defs>
+<linearGradient id="pg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f3ff"/></linearGradient>
+</defs>
+<rect width="1100" height="850" fill="url(#pg2)"/>
+<rect x="0" y="0" width="1100" height="14" fill="#FF8243"/>
+<rect x="0" y="836" width="1100" height="14" fill="#FF8243"/>
+<rect x="34" y="46" width="1032" height="758" fill="none" stroke="#2C2C54" stroke-width="2.5"/>
+<path d="M550 96c-14-16-42-12-42 12 0 20 26 36 42 48 16-12 42-28 42-48 0-24-28-28-42-12z" fill="none" stroke="#FF8243" stroke-width="4.5" stroke-linejoin="round"/>
+<path d="M500 176h26l12-24 18 44 14-28 10 18h30" fill="none" stroke="#DA70D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="550" y="240" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="6" fill="#8A8FA3">CERTIFICATE OF COMPLETION</text>
+<line x1="330" y1="266" x2="770" y2="266" stroke="#ECE4D6" stroke-width="2"/>
+<text x="550" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="42" fill="#2C2C54">Pediatric CPR &amp; First Aid</text>
+<text x="550" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#454A63">Infant, Child and Adult</text>
+<text x="550" y="446" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" letter-spacing="3" fill="#8A8FA3">AWARDED TO</text>
+<text x="550" y="502" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="40" fill="#DA70D6">Provider Name</text>
+<line x1="310" y1="528" x2="790" y2="528" stroke="#ECE4D6" stroke-width="2"/>
+<text x="550" y="574" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16.5" fill="#454A63">for successfully completing the required hours of training in</text>
+<text x="550" y="604" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16.5" fill="#454A63">pediatric resuscitation, choking response and emergency first aid</text>
+<rect x="150" y="676" width="270" height="1.6" fill="#2C2C54"/>
+<text x="285" y="704" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#8A8FA3">DATE COMPLETED</text>
+<text x="285" y="664" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="22" fill="#2C2C54">00 / 00 / 0000</text>
+<rect x="680" y="676" width="270" height="1.6" fill="#2C2C54"/>
+<text x="815" y="704" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#8A8FA3">VALID THROUGH</text>
+<text x="815" y="664" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="22" fill="#2C2C54">00 / 00 / 0000</text>
+<text x="550" y="778" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#B9B2A5">TRAINING PROVIDER</text>
+<g opacity="0.13"><text x="550" y="470" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="120" font-weight="bold" letter-spacing="12" fill="#2C2C54" transform="rotate(-22 550 470)">SAMPLE</text></g>
+</svg>
