@@ -923,3 +923,35 @@ body.cert-lock{overflow:hidden;}
   .btn{max-width:100%;white-space:normal;text-align:center;justify-content:center;}
   .btn-lg{padding:16px 22px;font-size:15.5px;}
 }
+
+/* iPhone: keep the floating buttons above the home indicator / notch inset */
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .lang-float,.wa-float,.to-top{bottom:calc(22px + env(safe-area-inset-bottom));}
+  @media (max-width:560px){
+    .lang-float,.wa-float,.to-top{bottom:calc(16px + env(safe-area-inset-bottom));}
+    .to-top--stacked{bottom:calc(78px + env(safe-area-inset-bottom));}
+  }
+}
+
+/* iPhone: the hero badges must not hang off the screen edge */
+@media (max-width:560px){
+  .hero-float.a{left:0;bottom:-12px;}
+  .hero-float.b{right:0;top:14px;}
+  .hero-float{padding:12px 15px;gap:10px;}
+  .hero-float .big{font-size:22px;}
+  .hero-float .ico{width:36px;height:36px;}
+  .hero-float .ico svg{width:19px;height:19px;}
+}
+
+/* iPhone: standalone links need a 44px tap height (inline prose links are left alone) */
+@media (max-width:640px){
+  .arrow-link,.prog .more{padding:9px 0;}
+  .site-footer a{padding:10px 0;}
+}
+
+/* iPhone: logo and breadcrumb links also need a comfortable tap height */
+@media (max-width:640px){
+  .nav-logo{display:inline-flex;align-items:center;min-height:44px;}
+  .breadcrumb{row-gap:2px;}
+  .breadcrumb a{display:inline-flex;align-items:center;min-height:36px;}
+}
