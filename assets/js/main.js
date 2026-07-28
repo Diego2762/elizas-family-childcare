@@ -54,7 +54,7 @@
     ".feature, .prog, .price, .split .txt, .split img, .section-head, " +
     ".stat, .cred, .step, .rel-card, .gcell, .cert-card, .value-list li, .perk, " +
     ".faq details, .split-lead > *, .callout, .contact-info, .contact-form, .tuition-table, " +
-    ".plan-card, .save-tile, .included, .promise, .learn"
+    ".plan-card, .save-tile, .included, .promise, .learn, .team-card"
   );
   if ("IntersectionObserver" in window && revealables.length) {
     revealables.forEach(function (el) { el.classList.add("reveal"); });
