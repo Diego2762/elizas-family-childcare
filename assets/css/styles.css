@@ -419,8 +419,14 @@ section{position:relative;}
 .cred p{font-size:14px;margin:0;}
 
 /* Team / caregivers */
-.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:820px;margin:0 auto;}
-.team-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px 26px 30px;text-align:center;position:relative;overflow:hidden;
+.team-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:center;}
+.team-intro h2{font-size:clamp(28px,3.2vw,40px);margin:12px 0 14px;}
+.team-intro p{font-size:16.5px;color:var(--slate);}
+.team-intro .team-tag{display:inline-flex;align-items:center;gap:9px;margin-top:20px;padding:11px 18px;border-radius:var(--radius);
+  background:#fff;border:1px solid var(--line);font-size:14px;font-weight:700;color:var(--midnight);}
+.team-intro .team-tag svg{width:19px;height:19px;flex:none;fill:none;stroke:var(--orchid);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.team-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px 24px 30px;text-align:center;position:relative;overflow:hidden;
   transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;}
 .team-card::before{content:"";position:absolute;left:0;top:0;height:5px;width:100%;background:linear-gradient(90deg,var(--orchid),var(--mango));opacity:.85;}
 .team-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent;}
@@ -432,7 +438,8 @@ section{position:relative;}
   background:rgba(218,112,214,.14);color:#A5399F;font-size:13px;font-weight:800;letter-spacing:.01em;}
 .team-years svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
 .team-card p.team-note{font-size:14.5px;margin-top:14px;}
-@media (max-width:640px){.team-grid{grid-template-columns:1fr;max-width:380px;gap:22px;}.team-ava{width:160px;height:160px;}}
+@media (max-width:960px){.team-layout{grid-template-columns:1fr;gap:36px;}.team-intro{text-align:center;max-width:640px;margin:0 auto;}}
+@media (max-width:640px){.team-grid{grid-template-columns:1fr;max-width:380px;margin:0 auto;gap:22px;}.team-ava{width:160px;height:160px;}}
 @media (prefers-reduced-motion:reduce){.team-card{transition:none;}.team-card:hover{transform:none;}}
 
 /* Value row (icon + text list) */
