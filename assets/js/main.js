@@ -404,7 +404,17 @@
       var match = Array.prototype.filter.call(tabs, function (t) {
         return t.getAttribute("data-view-tab") === hash;
       })[0];
-      if (match) { activate(hash, false); }
+      if (match) {
+        activate(hash, false);
+        // Land on the switch itself, so the deep link honours what was clicked.
+        var target = document.querySelector(".view-switch");
+        if (target) {
+          setTimeout(function () {
+            var off = (header ? header.offsetHeight : 0) + 18;
+            window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - off, behavior: "smooth" });
+          }, 120);
+        }
+      }
     }
 
     /* ---- Certificate lightbox ---- */
