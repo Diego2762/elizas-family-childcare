@@ -55,7 +55,7 @@ them identical everywhere, they need to match the Google Business Profile.
 - Eliza's Family Childcare
 - 1457 Blossom Hill Rd, San Jose, CA 95118
 - (408) 335-9357
-- elizasfamilychildcare@gmail.com
+- info@elizaschildcare.com
 - Monday to Friday, 7:30 AM to 5:30 PM
 - Ages 0 to 5, licensed for 14 children
 
