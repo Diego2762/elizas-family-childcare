@@ -3,9 +3,9 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.elizaschildcare.com" }],
-      "destination": "https://elizaschildcare.com/:path*",
+      "destination": "https://elizaschildcare.com/$1",
       "permanent": true
     }
   ],
