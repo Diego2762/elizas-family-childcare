@@ -59,7 +59,9 @@ body{
   overflow-x:hidden;
 }
 h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);font-weight:400;line-height:1.08;letter-spacing:-.01em;}
-img{max-width:100%;display:block;}
+img{max-width:100%;width:auto;height:auto;display:block;}
+picture{display:contents;}
+picture>source{display:none;}
 a{color:inherit;text-decoration:none;}
 button{font-family:var(--sans);cursor:pointer;border:none;background:none;}
 ul{list-style:none;}
@@ -654,10 +656,10 @@ section{position:relative;}
 /* ---- Auto-crossfade meal carousel (no arrows) ---- */
 .meal-carousel{position:relative;width:100%;aspect-ratio:3/2;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);}
 .meal-carousel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;border-radius:0;box-shadow:none;animation:mealFade 6s infinite;}
-.meal-carousel img:nth-child(1){animation-delay:0s;}
-.meal-carousel img:nth-child(2){animation-delay:3s;}
+.meal-carousel picture:nth-child(1) img{animation-delay:0s;}
+.meal-carousel picture:nth-child(2) img{animation-delay:3s;}
 @keyframes mealFade{0%{opacity:1;}46%{opacity:1;}54%{opacity:0;}96%{opacity:0;}100%{opacity:1;}}
-@media (prefers-reduced-motion:reduce){.meal-carousel img{animation:none;}.meal-carousel img:nth-child(1){opacity:1;}}
+@media (prefers-reduced-motion:reduce){.meal-carousel img{animation:none;}.meal-carousel picture:nth-child(1) img{opacity:1;}}
 
 /* ============================================================
    PRICING PLAN CARDS
@@ -983,7 +985,7 @@ body.cert-lock{overflow:hidden;}
 .ps-thumbs{display:flex;flex:none;}
 .ps-thumbs img{width:64px;height:64px;border-radius:15px;object-fit:cover;border:3px solid #fff;
   box-shadow:0 6px 16px rgba(44,44,84,.16);margin-left:-18px;}
-.ps-thumbs img:first-child{margin-left:0;}
+.ps-thumbs picture:first-child img{margin-left:0;}
 .proof-strip .ps-txt{flex:1 1 260px;}
 .proof-strip .ps-txt b{display:block;font-family:var(--serif);font-size:20px;color:var(--midnight);font-weight:600;}
 .proof-strip .ps-txt span{font-size:14.5px;color:var(--slate);display:block;margin-top:4px;}

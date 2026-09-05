@@ -444,7 +444,10 @@
 
     function open(card) {
       var img = card.querySelector("img");
-      mImg.src = card.getAttribute("data-full") || (img ? img.src : "");
+      var full = card.getAttribute("data-full") || (img ? img.src : "");
+      var webp = full.replace(/\.jpe?g$/i, ".webp");
+      mImg.onerror = function () { mImg.onerror = null; mImg.src = full; };
+      mImg.src = webp;
       mImg.alt = img ? img.alt : "";
       mTitle.textContent = card.getAttribute("data-title") || "";
       mMeta.textContent = card.getAttribute("data-meta") || "";
