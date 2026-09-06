@@ -193,7 +193,7 @@ section{position:relative;}
 .prog.p-toddler .age{background:var(--mango);}
 .prog.p-preschool .age{background:#6f8f74;}
 .prog .body{padding:24px 24px 28px;}
-.prog h3{font-size:22px;color:var(--midnight);margin-bottom:4px;}
+.prog h2,.prog h3{font-size:22px;color:var(--midnight);margin-bottom:4px;}
 .prog .range{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mango);margin-bottom:12px;display:block;}
 .prog p{font-size:14.5px;margin-bottom:16px;}
 .prog .more{font-weight:700;font-size:14px;color:var(--midnight);display:inline-flex;align-items:center;gap:6px;}
@@ -310,7 +310,7 @@ section{position:relative;}
 .site-footer{background:var(--midnight);color:#c9c7dd;padding:64px 0 26px;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;}
 .site-footer img.flogo{height:64px;margin-bottom:16px;}
-.site-footer h4{color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
+.site-footer h3{color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
 .site-footer a{color:#c9c7dd;font-size:14.5px;display:block;padding:5px 0;transition:color .2s;}
 .site-footer a:hover{color:var(--orchid);}
 .fnap{font-size:14.5px;line-height:1.9;}
@@ -417,7 +417,7 @@ section{position:relative;}
   transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s;}
 .cred:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm);border-color:transparent;}
 .cred .ico{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;font-size:22px;background:rgba(157,180,160,.18);}
-.cred h4{font-family:var(--sans);font-weight:700;font-size:16px;color:var(--midnight);margin-bottom:4px;}
+.cred h3{font-family:var(--sans);font-weight:700;font-size:16px;color:var(--midnight);margin-bottom:4px;}
 .cred p{font-size:14px;margin:0;}
 
 /* Team / caregivers */
@@ -475,7 +475,7 @@ section{position:relative;}
 .step::before{counter-increment:step;content:counter(step);position:absolute;top:-18px;left:24px;
   width:44px;height:44px;border-radius:50%;background:var(--midnight);color:#fff;font-family:var(--serif);font-size:20px;
   display:grid;place-items:center;box-shadow:0 8px 18px rgba(44,44,84,.28);}
-.step h4{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--midnight);margin:12px 0 6px;}
+.step h3{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--midnight);margin:12px 0 6px;}
 .step p{font-size:14.5px;margin:0;}
 
 /* Tuition table */
@@ -579,7 +579,7 @@ section{position:relative;}
   transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
 .rel-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
 .rel-card .rk{font-size:26px;margin-bottom:10px;}
-.rel-card h4{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--midnight);}
+.rel-card h3{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--midnight);}
 .rel-card p{font-size:14px;margin:6px 0 0;}
 
 /* Back-to-top */
